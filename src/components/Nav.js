@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
-import { Link, withRouter } from "react-router-dom";
+import {
+  Link,
+  withRouter,
+  BrowserRouter,
+  Route,
+  Switch
+} from "react-router-dom";
 import Home from "./Home";
 import Portfolio from "./Portfolio";
 import About from "./About";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class Nav extends Component {
   state = {};
+
   render() {
     return (
       <div style={{ height: "100vh", position: "relative" }}>

@@ -173,9 +173,9 @@ class Portfolio extends Component {
             }
             name={"Rebrand Digital (in Maintainance)"}
             description={
-              "This is the firm that I am working at. I ahve developed the V1.0 two years ago, now I am developing the V2.0 of the site. It will go live soon"
+              "This is the firm that I am working at. I have developed the V1.0 two years ago, now I am developing the V2.0 of the site. It will go live soon"
             }
-            demo={"http://prahladsinghpatel.com"}
+            demo={"http://rebrandigital.com"}
           />
         </div>
       );

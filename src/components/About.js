@@ -36,7 +36,7 @@ class About extends Component {
         <div>
           <Experience
             year={"2017 - Present"}
-            cname={"Rebrand Digital Pvt.Ltd"}
+            cname={"Rebrand Digital"}
             position={"Application Developer/ Designer"}
             description={
               "Rebrand Digital, an innovative startup that deals with every aspect of the digital presence of an individual or an organization. I have joined the company little after it's inception and is responsible for designing and developing web-based applications as per the requirement of the client. It can be a SPA (Single Page App) build with React, a site built with CMS like Wordpress or a simple HTML5 and CSS3 based site. Apart from that, I am also looking after designing process."
@@ -73,8 +73,27 @@ class About extends Component {
       );
     } else {
       return (
-        <div>
-          `<h1>Achievements</h1>
+        <div style={{ width: "90%" }}>
+          <ul style={{ listStyle: "none" }}>
+            <li>
+              <i class="far fa-hand-point-right" /> As an influencer, I was
+              working with <b>Nawzil Najeeb</b> (Marketing Manager, Microsoft
+              Kuwait) as a freelancer to promote Windows Phone 8.1 on Facebook.
+            </li>
+            <hr />
+            <li>
+              <i class="far fa-hand-point-right" /> As a Digital Marketer, I
+              have worked with famous figures like
+              <b> Prahlad Singh Patel</b>, <b>Rajiv Pratap Rudy</b> and
+              <b> Shahnawaz Hussain</b>.
+            </li>
+            <hr />
+            <li>
+              <i class="far fa-hand-point-right" /> I have organized{" "}
+              <b>Hon. Prime minister Shri Narendra Modi</b>’s direct
+              communication with the pubic of Madhya Pradesh on 10th Oct 2018
+            </li>
+          </ul>
         </div>
       );
     }

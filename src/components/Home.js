@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 class Home extends Component {
   state = {
-    shown: false
+    shown: true
   };
 
   toggle = () => {
@@ -28,9 +28,11 @@ class Home extends Component {
         <Cell col={4} style={{ textAlign: "left" }}>
           <h1 style={{ fontSize: "80px" }}>
             <b>Hello </b>
-            <FABButton mini colored primary ripple onClick={this.toggle}>
-              <Icon name="share" />
-            </FABButton>
+            <a class="a2a_dd" href="#">
+              <FABButton mini colored primary ripple onClick={this.toggle}>
+                <Icon name="share" />
+              </FABButton>
+            </a>
           </h1>
           <h6 style={shown}>
             <i class="fab fa-twitter" />
