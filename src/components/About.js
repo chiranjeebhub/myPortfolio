@@ -39,7 +39,7 @@ class About extends Component {
             cname={"Rebrand Digital Pvt.Ltd"}
             position={"Application Developer/ Designer"}
             description={
-              "Out of numerous professions out there, I choose Computer Science because of the unique learning opportunity it provides. Like an actor who gets to play different characters, we developers get to develop projects of various fields. That exposes us to a vast array of knowledge that a regular person never gets to learn in a lifetime."
+              "Rebrand Digital, an innovative startup that deals with every aspect of the digital presence of an individual or an organization. I have joined the company little after it's inception and is responsible for designing and developing web-based applications as per the requirement of the client. It can be a SPA (Single Page App) build with React, a site built with CMS like Wordpress or a simple HTML5 and CSS3 based site. Apart from that, I am also looking after designing process."
             }
           />
           <hr />
@@ -48,16 +48,16 @@ class About extends Component {
             cname={"FNY Digital"}
             position={"Senior UI/UX Designer, Developer"}
             description={
-              "Out of numerous professions out there, I choose Computer Science because of the unique learning opportunity it provides. Like an actor who gets to play different characters, we developers get to develop projects of various fields. That exposes us to a vast array of knowledge that a regular person never gets to learn in a lifetime."
+              "FNYDigital is a digital media startup that set out to revolutionalize Online Reputation Management.  I worked with the core team to kick start the process. I have worked there for a year and within that time period, I had the opportunity to work with national level leaders. "
             }
           />
           <hr />
           <Experience
             year={"2015 - 2016"}
             cname={"CTPL"}
-            position={"UI/UX Design Lead"}
+            position={"Design Lead"}
             description={
-              "Out of numerous professions out there, I choose Computer Science because of the unique learning opportunity it provides. Like an actor who gets to play different characters, we developers get to develop projects of various fields. That exposes us to a vast array of knowledge that a regular person never gets to learn in a lifetime."
+              "CTPL, a subsidiary of Krishna Maruti Group is a mega manufacturing facility that manufactures exclusively for Maruti Suzuki. I was hired to ease the internal work process by designing and developing corporate web apps for internal use"
             }
           />
           <hr />
@@ -66,7 +66,7 @@ class About extends Component {
             cname={"Odisha 24x7"}
             position={"Research Analyst"}
             description={
-              "Out of numerous professions out there, I choose Computer Science because of the unique learning opportunity it provides. Like an actor who gets to play different characters, we developers get to develop projects of various fields. That exposes us to a vast array of knowledge that a regular person never gets to learn in a lifetime."
+              "Odisha 24x7 was a directory service initiative a lot like just dial with a localization spin on it. I was hired to design the customer interaction flow as well as the UI of the site."
             }
           />
         </div>
@@ -83,19 +83,18 @@ class About extends Component {
   render() {
     return (
       <div>
-        <br />
-        <Grid className="home-grid">
-          <Cell col={1} />
+        <Grid className="about-grid">
+          <Cell col={1} id="nav" />
           <Cell col={3} style={{ textAlign: "right" }}>
-            <br />
             <img
               style={{ borderRadius: "5%", width: "300px", boxShadow: "5px" }}
               src={require("../me.jpg")}
+              id="nav"
             />
           </Cell>
 
-          <Cell col={6} style={{ marginLeft: "40px", marginTop: "30px" }}>
-            <h1>
+          <Cell col={6} style={{ marginLeft: "40px", marginTop: "10px" }}>
+            <h1 id="name">
               <b>Chiranjeeb Jena</b>
             </h1>
 
@@ -103,17 +102,36 @@ class About extends Component {
               Out of numerous professions out there, I choose Computer Science
               because of the unique learning opportunity it provides. Like an
               actor who gets to play different characters, we developers get to
-              develop projects of various fields. That exposes us to a vast
+              develop projects in various fields. That exposes us to a vast
               array of knowledge that a regular person never gets to learn in a
               lifetime.
             </p>
             <h6>
               <i class="fab fa-twitter" />
-              &nbsp;&nbsp;<b>twitter</b>&nbsp;&nbsp;
-              <i class="fab fa-linkedin" />
-              &nbsp;&nbsp;<b>LinkedIn</b>&nbsp;&nbsp;
+              <a
+                href="https://twitter.com/ichiranjeeb"
+                target="_blank"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                &nbsp;&nbsp;<b>twitter</b>
+              </a>
+              &nbsp;&nbsp; <i class="fab fa-linkedin" />
+              <a
+                href="https://www.linkedin.com/in/ichiranjeeb"
+                target="_blank"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                &nbsp;&nbsp;<b>LinkedIn</b>
+              </a>
+              &nbsp;&nbsp;
               <i class="fab fa-github" />
-              &nbsp;&nbsp;<b>Github</b>&nbsp;&nbsp;
+              <a
+                href="https://github.com/chiranjeebhub"
+                target="_blank"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                &nbsp;&nbsp;<b>Github</b>
+              </a>
             </h6>
           </Cell>
           <Cell col={1} />
@@ -130,7 +148,7 @@ class About extends Component {
         </Tabs>
         <section>
           <div className="content">
-            <Grid className="home-grid">
+            <Grid className="">
               <Cell col={2} />
               <Cell col={8}>{this.toggleTabs()}</Cell>
               <Cell col={2} />

@@ -15,14 +15,14 @@ class Nav extends Component {
           <Header
             title={
               <span>
-                <Link to="/myPortfolio">
+                <Link to="/">
                   <img
                     style={{ borderRadius: "50%", width: "40px" }}
                     src={require("../logo.jpg")}
                   />
                 </Link>
 
-                <Link to="/myPortfolio" style={{ textDecoration: "none" }}>
+                <Link to="/" style={{ textDecoration: "none" }}>
                   <span style={{ color: "white" }}>
                     &nbsp;&nbsp;Chiranjeeb Jena&nbsp;
                   </span>
@@ -33,26 +33,36 @@ class Nav extends Component {
               </span>
             }
           >
-            <Navigation>
-              <Link to="/myPortfolio">Home</Link>
-              <Link to="/about">About</Link>
+            <Navigation id="nav">
+              <Link to="/">Home</Link>
+              <Link to="/resume">Resume</Link>
               <Link to="/portfolio">Portfolio</Link>
-              <Link to="/blog">Blog</Link>
+              <a href="https://ichiranjeeb.com" target="_blank">
+                Blog
+              </a>
             </Navigation>
           </Header>
           <Drawer title="Chiranjeeb Jena">
             <Navigation>
-              <Link to="/myPortfolio">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/portfolio">Portfolio</Link>
-              <Link to="/blog">Blog</Link>
+              <Link to="/">
+                <i class="fas fa-house-damage" /> Home
+              </Link>
+              <Link to="/resume">
+                <i class="far fa-address-card" /> Resume
+              </Link>
+              <Link to="/portfolio">
+                <i class="fas fa-code-branch" /> Portfolio
+              </Link>
+              <a href="https://ichiranjeeb.com" target="_blank">
+                <i class="fas fa-rss" /> Blog
+              </a>
             </Navigation>
           </Drawer>
           <Content>
             <Switch>
-              <Route exact path="/myPortfolio" component={Home} />
+              <Route exact path="/" component={Home} />
               <Route path="/portfolio" component={Portfolio} />
-              <Route path="/about" component={About} />
+              <Route path="/resume" component={About} />
             </Switch>
           </Content>
         </Layout>

@@ -1,18 +1,17 @@
 import React from "react";
-
+import "./App.css";
 import Nav from "./components/Nav";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
-import About from "./components/About";
+import { BrowserRouter, Route, HashRouter } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    //<BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="/">
       <div className="App">
         <Nav />
       </div>
-    </BrowserRouter>
+    </HashRouter>
+    //</BrowserRouter>
   );
 }
 

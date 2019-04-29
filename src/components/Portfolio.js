@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell, Button } from "react-mdl";
 import Project from "./Project";
+import Wproject from "./Wproject";
 import Graphic from "./Graphic";
 
 class Portfolio extends Component {
@@ -11,17 +12,16 @@ class Portfolio extends Component {
   toggleTabs = () => {
     if (this.state.activeTab === 0) {
       return (
-        <div style={{ display: "flex" }}>
+        <div style={{ textAlign: "center" }}>
           <Project
             img={
               "https://pbs.twimg.com/profile_images/789117657714831361/zGfknUu8.jpg"
             }
             name={"MovieDB"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia..."
+              "This is a Movie Database that fetches data from The Movie Database API. In this app, I have used React Router, Axios and Context API"
             }
             github={"https://github.com/chiranjeebhub/MovieDB"}
-            demo={""}
           />
           <Project
             img={
@@ -29,104 +29,160 @@ class Portfolio extends Component {
             }
             name={"Portfolio"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia..."
+              "This is my portfolio that you are looking at right now. In this app, I have used React Router, Material UI and deployed it to GitHub Pages."
             }
-            github={"https://github.com/chiranjeebhub/portfolio"}
-            demo={""}
+            github={"https://github.com/chiranjeebhub/myPortfolio"}
           />
           <Project
             img={
-              "https://pbs.twimg.com/profile_images/789117657714831361/zGfknUu8.jpg"
+              "http://ichiranjeeb.com/wp-content/uploads/2019/04/property.jpg"
             }
-            name={"MovieDB"}
+            name={"Cred Homes (Ongoing)"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia..."
+              "This is a property App built with React which is currently ongoing. Till Now I have used React Router, Bootstrap, Axios & Redux"
             }
-            github={"https://github.com/chiranjeebhub/portfolio"}
-            demo={""}
+            github={"https://github.com/chiranjeebhub/cdhomes_react"}
           />
         </div>
       );
     } else if (this.state.activeTab === 1) {
       return (
         <div>
-          <div style={{ display: "flex" }}>
-            <Project
+          <div style={{ textAlign: "center" }}>
+            <Wproject
               img={
                 "https://ichiranjeeb.com/wp-content/uploads/2018/08/my-1024x1024.jpg"
               }
-              name={"www.ichiranjeeb.com"}
+              name={"My Blog"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia..."
+                "This is my personal blog build with WordPress. I have designed the site with Elementor Pro and some other frameworks."
               }
-              github={"https://github.com/chiranjeebhub/portfolio"}
               demo={"https://ichiranjeeb.com"}
             />
-            <Project
+            <Wproject
               img={
-                "https://brandingwings.com/wp-content/uploads/2018/09/rocket.gif"
+                "http://ichiranjeeb.com/wp-content/uploads/2019/04/Screenshot-582.png"
               }
               name={"Branding Wings"}
               description={
-                "A startup that deals with web development, online reputation management, social media management and digital marketing"
+                "Developed the web presence of this startup that deals with web development, ORM, social media management and digital marketing"
               }
-              github={"https://github.com/chiranjeebhub/portfolio"}
               demo={"https://brandingwings.com/"}
             />
-            <Project
+            <Wproject
               img={
-                "https://medflyvet.com/wp-content/uploads/2019/02/about5_new25_n.png"
+                "http://ichiranjeeb.com/wp-content/uploads/2019/04/Screenshot-903.png"
               }
               name={"Medflyvet"}
               description={
-                "MovieDB: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia..."
+                "Medfly Healthcare provides healthcare solutions for your pets. I have developed their e-commerce platform to sell directly to consumers"
               }
-              github={"https://github.com/chiranjeebhub/portfolio"}
               demo={"https://medflyvet.com"}
             />
           </div>
           <br />
-          <div style={{ display: "flex" }}>
-            <Project
+          <div style={{ textAlign: "center" }}>
+            <Wproject
               img={
-                "https://ichiranjeeb.com/wp-content/uploads/2018/08/my-1024x1024.jpg"
+                "http://ichiranjeeb.com/wp-content/uploads/2019/04/Screenshot-267.png"
               }
-              name={"www.ichiranjeeb.com"}
+              name={"Digital Aarambh"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia..."
+                "Developed the website of this startup that deals with political campaigns as well as digital marketing for both individuals and organizations"
               }
-              github={"https://github.com/chiranjeebhub/portfolio"}
-              demo={"https://ichiranjeeb.com"}
+              demo={"https://digitalaarambh.com/"}
             />
-            <Project
+            <Wproject
               img={
-                "https://brandingwings.com/wp-content/uploads/2018/09/rocket.gif"
+                "http://ichiranjeeb.com/wp-content/uploads/2019/04/Screenshot-809.png"
               }
-              name={"Branding Wings"}
+              name={"Digialaya"}
               description={
-                "A startup that deals with web development, online reputation management, social media management and digital marketing"
+                "Revamped the site of this organization that provides digital communication solutions such as toll free numbers for corporations."
               }
-              github={"https://github.com/chiranjeebhub/portfolio"}
-              demo={"https://brandingwings.com/"}
+              demo={"http://digialaya.com/"}
             />
-            <Project
+            <Wproject
               img={
-                "https://medflyvet.com/wp-content/uploads/2019/02/about5_new25_n.png"
+                "http://ichiranjeeb.com/wp-content/uploads/2019/04/Screenshot-755.png"
               }
-              name={"Medflyvet"}
+              name={"Views Connect"}
               description={
-                "MovieDB: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia..."
+                "Views Connect is a blog designed to make the current and cutting edge technology news accessible to everyone"
               }
-              github={"https://github.com/chiranjeebhub/portfolio"}
-              demo={"https://medflyvet.com"}
+              demo={"http://viewsconnect.com/"}
+            />
+          </div>
+          <br />
+          <div style={{ textAlign: "center" }}>
+            <Wproject
+              img={"http://shoppetcare.com/wp-content/uploads/2019/04/cat.jpg"}
+              name={"Shop Petcare"}
+              description={
+                "I have developed their e-commerce platform for this firm so that they can sell their products directly to American consumers"
+              }
+              demo={"http://shoppetcare.com/"}
+            />
+            <Wproject
+              img={
+                "http://ichiranjeeb.com/wp-content/uploads/2019/04/Screenshot-816.png"
+              }
+              name={"E-Digital Warriors"}
+              description={
+                "Developed the website of this startup that deals with digital marketing for both individuals and organizations"
+              }
+              demo={"http://www.edigitalwarriors.com/"}
+            />
+            <Wproject
+              img={
+                "http://ichiranjeeb.com/wp-content/uploads/2019/04/Screenshot-827.png"
+              }
+              name={"Sai Art Group"}
+              description={
+                "Developed the website for Sai Art Group, a dance institute situated at Lewis Center, Ohio"
+              }
+              demo={"https://saiartgroup.com/"}
             />
           </div>
         </div>
       );
     } else if (this.state.activeTab === 2) {
       return (
+        <div style={{ textAlign: "center" }}>
+          <Wproject
+            img={"http://prahladsinghpatel.com/assets/images/3-2-2000x1328.png"}
+            name={"Prahlad Singh Patel"}
+            description={
+              "I was fortunate enough to work with a reputed Member of Parliament. I have designed the official website as well as managed his social media profiles. "
+            }
+            demo={"http://prahladsinghpatel.com"}
+          />
+          <Wproject
+            img={
+              "http://ichiranjeeb.com/wp-content/uploads/2019/04/transcriptomics-s6-2000x833.jpg"
+            }
+            name={"Biomics Techno Solutions (in Maintainance)"}
+            description={
+              "It is one of the fastest developing bioinformatics research and training organizations and I have develoed their website"
+            }
+            demo={"http://biomicstechnosolutions.com"}
+          />
+          <Wproject
+            img={
+              "http://ichiranjeeb.com/wp-content/uploads/2019/04/Screenshot-950.png"
+            }
+            name={"Rebrand Digital (in Maintainance)"}
+            description={
+              "This is the firm that I am working at. I ahve developed the V1.0 two years ago, now I am developing the V2.0 of the site. It will go live soon"
+            }
+            demo={"http://prahladsinghpatel.com"}
+          />
+        </div>
+      );
+    } else {
+      return (
         <div style={{ display: "flex" }}>
-          <Grid className="home-grid">
+          <Grid className="">
             <Cell col={12}>
               <h1 style={{ fontSize: 50, color: "gray", opacity: "0.3" }}>
                 <b>
@@ -158,13 +214,14 @@ class Portfolio extends Component {
           onChange={tabId => this.setState({ activeTab: tabId })}
           ripple
         >
-          <Tab>React Projects</Tab>
-          <Tab>Wordpress Projects</Tab>
+          <Tab>React</Tab>
+          <Tab>Wordpress</Tab>
+          <Tab>HTML/CSS</Tab>
           <Tab>Graphics</Tab>
         </Tabs>
         <section>
           <div className="content">
-            <Grid className="home-grid">
+            <Grid>
               <Cell col={1} />
               <Cell col={10}>{this.toggleTabs()}</Cell>
               <Cell col={1} />

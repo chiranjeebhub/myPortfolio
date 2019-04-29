@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardTitle, CardText, CardActions, Button } from "react-mdl";
 
-class Project extends Component {
+class Wproject extends Component {
   state = {};
 
   render() {
@@ -21,10 +21,10 @@ class Project extends Component {
           <b>{this.props.name}:</b> {this.props.description}
         </CardText>
         <CardActions border>
-          <a href={this.props.github} target="_blank">
+          <a href={this.props.demo} target="_blank">
             <Button colored>
-              <i class="fab fa-github" />
-              &nbsp; Github
+              <i class="fas fa-external-link-alt" />
+              &nbsp; Demo
             </Button>
           </a>
         </CardActions>
@@ -33,4 +33,4 @@ class Project extends Component {
   }
 }
 
-export default Project;
+export default Wproject;
