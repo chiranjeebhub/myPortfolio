@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import { Grid, Cell, Button, FABButton, Icon } from "react-mdl";
-import { gray } from "ansi-colors";
 import { Link } from "react-router-dom";
+import loadjs from "loadjs";
 
 class Home extends Component {
   state = {
     shown: true
+  };
+
+  componentDidMount = () => {
+    loadjs("https://static.addtoany.com/menu/page.js", () => {});
   };
 
   toggle = () => {

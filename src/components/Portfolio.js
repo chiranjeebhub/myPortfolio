@@ -22,6 +22,7 @@ class Portfolio extends Component {
               "This is a Movie Database that fetches data from The Movie Database API. In this app, I have used React Router, Axios and Context API"
             }
             github={"https://github.com/chiranjeebhub/MovieDB"}
+            demo={""}
           />
           <Project
             img={
@@ -32,6 +33,19 @@ class Portfolio extends Component {
               "This is my portfolio that you are looking at right now. In this app, I have used React Router, Material UI and deployed it to GitHub Pages."
             }
             github={"https://github.com/chiranjeebhub/myPortfolio"}
+            demo={""}
+          />
+
+          <Project
+            img={
+              "https://cdn-www.enfocus.com/sites/combell-www.enfocus.com/files/media/blog/2017-08-09-Lorem-Ipsum/lorem-ipsum.jpg"
+            }
+            name={"Text Generator"}
+            description={
+              "This is a lorem-ipsum text generator that I have creted for my persona use. It uses baconipsum API to generated words"
+            }
+            github={"https://github.com/chiranjeebhub/lorem"}
+            demo={"https://chiranjeebhub.github.io/lorem/"}
           />
           <Project
             img={
@@ -42,6 +56,7 @@ class Portfolio extends Component {
               "This is a property App built with React which is currently ongoing. Till Now I have used React Router, Bootstrap, Axios & Redux"
             }
             github={"https://github.com/chiranjeebhub/cdhomes_react"}
+            demo={""}
           />
         </div>
       );
@@ -50,9 +65,7 @@ class Portfolio extends Component {
         <div>
           <div style={{ textAlign: "center" }}>
             <Wproject
-              img={
-                "https://ichiranjeeb.com/wp-content/uploads/2018/08/my-1024x1024.jpg"
-              }
+              img={"http://ichiranjeeb.com/wp-content/uploads/2019/04/2.png"}
               name={"My Blog"}
               description={
                 "This is my personal blog build with WordPress. I have designed the site with Elementor Pro and some other frameworks."
@@ -163,7 +176,7 @@ class Portfolio extends Component {
             }
             name={"Biomics Techno Solutions (in Maintainance)"}
             description={
-              "It is one of the fastest developing bioinformatics research and training organizations and I have develoed their website"
+              "It is one of the fastest developing bioinformatics research and training organizations and I have designed and develoed their website"
             }
             demo={"http://biomicstechnosolutions.com"}
           />

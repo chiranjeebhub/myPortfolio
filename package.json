@@ -5,6 +5,7 @@
   "homepage": "https://chiranjeebhub.github.io/myPortfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "loadjs": "^3.6.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-mdl": "^1.11.0",

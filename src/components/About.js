@@ -112,12 +112,12 @@ class About extends Component {
             />
           </Cell>
 
-          <Cell col={6} style={{ marginLeft: "40px", marginTop: "10px" }}>
+          <Cell col={6} style={{ marginLeft: "40px", marginTop: "0px" }}>
             <h1 id="name">
               <b>Chiranjeeb Jena</b>
             </h1>
 
-            <p style={{ fontSize: "15px" }}>
+            <p style={{ fontSize: "17px", textAlign: "justify" }}>
               Out of numerous professions out there, I choose Computer Science
               because of the unique learning opportunity it provides. Like an
               actor who gets to play different characters, we developers get to
@@ -126,30 +126,22 @@ class About extends Component {
               lifetime.
             </p>
             <h6>
-              <i class="fab fa-twitter" />
+              <i class="fas fa-envelope-open-text" />
               <a
-                href="https://twitter.com/ichiranjeeb"
+                href="mailto:chiranjib.jena@gmail.com"
                 target="_blank"
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: "none", color: "black" }}
               >
-                &nbsp;&nbsp;<b>twitter</b>
-              </a>
-              &nbsp;&nbsp; <i class="fab fa-linkedin" />
-              <a
-                href="https://www.linkedin.com/in/ichiranjeeb"
-                target="_blank"
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                &nbsp;&nbsp;<b>LinkedIn</b>
+                &nbsp;&nbsp;<b>chiranjib.jena@gmail.com</b>
               </a>
               &nbsp;&nbsp;
-              <i class="fab fa-github" />
+              <i class="fas fa-mobile-alt" />
               <a
-                href="https://github.com/chiranjeebhub"
+                href="tel:07978215185"
                 target="_blank"
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: "none", color: "black" }}
               >
-                &nbsp;&nbsp;<b>Github</b>
+                &nbsp;&nbsp;<b>+91-7978215185</b>
               </a>
             </h6>
           </Cell>
