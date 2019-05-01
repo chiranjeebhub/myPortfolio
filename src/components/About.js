@@ -130,18 +130,23 @@ class About extends Component {
               <a
                 href="mailto:chiranjib.jena@gmail.com"
                 target="_blank"
-                style={{ textDecoration: "none", color: "black" }}
+                style={{ textDecoration: "none", color: "white" }}
               >
-                &nbsp;&nbsp;<b>chiranjib.jena@gmail.com</b>
+                &nbsp;&nbsp;chiranjib.jena@gmail.com
               </a>
-              &nbsp;&nbsp;
-              <i class="fas fa-mobile-alt" />
+              <br />
+              <i class="fas fa-phone-square" />
+              &nbsp;
               <a
                 href="tel:07978215185"
                 target="_blank"
-                style={{ textDecoration: "none", color: "black" }}
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  fontSize: "15px"
+                }}
               >
-                &nbsp;&nbsp;<b>+91-7978215185</b>
+                &nbsp;&nbsp;+91-7978215185
               </a>
             </h6>
           </Cell>
