@@ -4,8 +4,8 @@ import { Link, withRouter, Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import Portfolio from "./Portfolio";
 import About from "./About";
-//import Blog from "./Blog";
-const Blog = lazy(() => import("./Blog"));
+import Blog from "./Blog";
+//const Blog = lazy(() => import("./Blog"));
 class Nav extends Component {
   state = {};
 
@@ -39,10 +39,7 @@ class Nav extends Component {
               <Link to="/">Home</Link>
               <Link to="/resume">Resume</Link>
               <Link to="/portfolio">Portfolio</Link>
-
-              <Link to="/blog">
-                <i className="fas fa-code-branch" /> Blog
-              </Link>
+              <Link to="/blog">Blog</Link>
 
               {/* <a href="https://ichiranjeeb.com" target="_blank">
                 Blog
@@ -73,9 +70,7 @@ class Nav extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/resume" component={About} />
-              <Suspense fallback={<div className="loader" />}>
-                <Route path="/blog" component={Blog} />
-              </Suspense>
+              <Route path="/blog" component={Blog} />
             </Switch>
           </Content>
         </Layout>
