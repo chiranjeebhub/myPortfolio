@@ -33,7 +33,7 @@ class Portfolio extends Component {
               "This is my portfolio that you are looking at right now. In this app, I have used React Router, Material UI and deployed it to GitHub Pages."
             }
             github={"https://github.com/chiranjeebhub/myPortfolio"}
-            demo={""}
+            demo={"https://chiranjeebhub.github.io/myPortfolio"}
           />
 
           <Project
@@ -42,10 +42,19 @@ class Portfolio extends Component {
             }
             name={"Text Generator"}
             description={
-              "This is a lorem-ipsum text generator that I have creted for my persona use. It uses baconipsum API to generated words"
+              "This is a lorem-ipsum text generator that I have creted for my personal use. It uses baconipsum API to generated words"
             }
             github={"https://github.com/chiranjeebhub/lorem"}
             demo={"https://chiranjeebhub.github.io/lorem/"}
+          />
+          <Project
+            img={"https://media.giphy.com/media/3o6gbbuLW76jkt8vIc/giphy_s.gif"}
+            name={"Gif Search"}
+            description={
+              "This is a GIF search engine with 10 result limit that is powered by Giphy API. Packages used: Bootstrap, Axios, gh-pages. Pending to-do: Pagination"
+            }
+            github={"https://github.com/chiranjeebhub/giphy"}
+            demo={"https://chiranjeebhub.github.io/giphy/"}
           />
           <Project
             img={

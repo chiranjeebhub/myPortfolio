@@ -27,6 +27,12 @@ class Project extends Component {
               &nbsp; Github
             </Button>
           </a>
+          <a href={this.props.demo} target="_blank">
+            <Button colored>
+              <i class="fas fa-external-link-alt" />
+              &nbsp; Github
+            </Button>
+          </a>
         </CardActions>
       </Card>
     );
