@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardTitle, CardText, CardActions, Button } from "react-mdl";
 
-class Wproject extends Component {
+class Post extends Component {
   state = {};
 
   render() {
@@ -18,13 +18,13 @@ class Wproject extends Component {
           }}
         />
         <CardText>
-          <b>{this.props.name}:</b> {this.props.description}
+          <b>{this.props.title}</b>
         </CardText>
         <CardActions border>
-          <a href={this.props.demo} target="_blank" rel="noopener noreferrer">
+          <a href={this.props.link} target="_blank" rel="noopener noreferrer">
             <Button colored>
-              <i class="fas fa-external-link-alt" />
-              &nbsp; Demo
+              <i className="fas fa-external-link-alt" />
+              &nbsp; Visit Post
             </Button>
           </a>
         </CardActions>
@@ -33,4 +33,4 @@ class Wproject extends Component {
   }
 }
 
-export default Wproject;
+export default Post;

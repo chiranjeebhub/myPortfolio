@@ -23,43 +23,46 @@ class Home extends Component {
       display: this.state.shown ? "block" : "none"
     };
 
-    const hidden = {
-      display: this.state.shown ? "none" : "block"
-    };
+    // const hidden = {
+    //   display: this.state.shown ? "none" : "block"
+    // };
     return (
       <Grid className="home-grid" style={{ height: "87vh" }}>
         <Cell col={2} />
         <Cell col={4} style={{ textAlign: "left" }}>
           <h1 style={{ fontSize: "80px" }}>
             <b>Hello </b>
-            <a class="a2a_dd" href="#">
+            <span className="a2a_dd">
               <FABButton mini colored primary ripple onClick={this.toggle}>
                 <Icon name="share" />
               </FABButton>
-            </a>
+            </span>
           </h1>
           <h6 style={shown}>
-            <i class="fab fa-twitter" />
+            <i className="fab fa-twitter" />
             <a
               href="https://twitter.com/ichiranjeeb"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
               &nbsp;&nbsp;<b>twitter</b>
             </a>
-            &nbsp;&nbsp; <i class="fab fa-linkedin" />
+            &nbsp;&nbsp; <i className="fab fa-linkedin" />
             <a
               href="https://www.linkedin.com/in/ichiranjeeb"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
               &nbsp;&nbsp;<b>LinkedIn</b>
             </a>
             &nbsp;&nbsp;
-            <i class="fab fa-github" />
+            <i className="fab fa-github" />
             <a
               href="https://github.com/chiranjeebhub"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
               &nbsp;&nbsp;<b>Github</b>
@@ -81,7 +84,7 @@ class Home extends Component {
           <br />
           <Link to="/portfolio">
             <Button raised accent ripple>
-              <i class="fab fa-github" />
+              <i className="fab fa-github" />
               &nbsp;&nbsp;Projects I did
             </Button>
           </Link>
@@ -100,7 +103,7 @@ class Home extends Component {
           <br />
           <br />
           <i
-            class="fas fa-code"
+            className="fas fa-code"
             style={{ fontSize: 450, color: "gray", opacity: "0.2" }}
           />
           {/* <img

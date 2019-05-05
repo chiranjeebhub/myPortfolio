@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Cell, Button, Tabs, Tab } from "react-mdl";
+import { Grid, Cell, Tabs, Tab } from "react-mdl";
 import Experience from "./Experience";
 class About extends Component {
   state = { activeTab: 1 };
@@ -10,7 +10,10 @@ class About extends Component {
         <Grid>
           <Cell col={2}>
             <h4>
-              <img src="http://www.bput.ac.in/images/bput-logo.png" />
+              <img
+                src="http://www.bput.ac.in/images/bput-logo.png"
+                alt="bput"
+              />
             </h4>
           </Cell>
           <Cell col={6}>
@@ -24,7 +27,11 @@ class About extends Component {
             <p>
               <i class="fas fa-external-link-alt" />
               &nbsp;
-              <a href="http://www.bput.ac.in/home.html" target="_blank">
+              <a
+                href="http://www.bput.ac.in/home.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 BPUT, Odisha
               </a>
             </p>
@@ -108,6 +115,7 @@ class About extends Component {
             <img
               style={{ borderRadius: "5%", width: "300px", boxShadow: "5px" }}
               src={require("../me.jpg")}
+              alt="me"
               id="nav"
             />
           </Cell>
@@ -130,6 +138,7 @@ class About extends Component {
               <a
                 href="mailto:chiranjib.jena@gmail.com"
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{ textDecoration: "none", color: "white" }}
               >
                 &nbsp;&nbsp;chiranjib.jena@gmail.com
@@ -140,6 +149,7 @@ class About extends Component {
               <a
                 href="tel:07978215185"
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   textDecoration: "none",
                   color: "white",

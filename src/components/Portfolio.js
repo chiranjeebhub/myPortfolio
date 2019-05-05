@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell, Button } from "react-mdl";
 import Project from "./Project";
 import Wproject from "./Wproject";
-import Graphic from "./Graphic";
 
 class Portfolio extends Component {
   state = {
@@ -213,7 +212,11 @@ class Portfolio extends Component {
                   hance profile
                 </b>
               </h1>
-              <a href="https://www.behance.net/ichiranjeeb" target="_blank">
+              <a
+                href="https://www.behance.net/ichiranjeeb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button raised accent ripple>
                   <i
                     class="fas fa-external-link-alt"

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Nav from "./components/Nav";
-import { BrowserRouter, Route, HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
