@@ -23,7 +23,7 @@ class Project extends Component {
         <CardActions border>
           <a href={this.props.github} target="_blank" rel="noopener noreferrer">
             <Button colored>
-              <i class="fab fa-github" />
+              <i className="fab fa-github" />
               &nbsp; Github
             </Button>
           </a>

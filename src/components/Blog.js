@@ -1,4 +1,4 @@
-import React, { Component, lazy, Suspense } from "react";
+import React, { Component } from "react";
 import axios from "axios";
 import Post from "./post";
 //const Post = lazy(() => import("./post"));
@@ -39,6 +39,7 @@ class Blog extends Component {
                 key={post.id}
               >
                 <Post
+                  id={post.id}
                   title={post.title.rendered}
                   link={post.link}
                   img={

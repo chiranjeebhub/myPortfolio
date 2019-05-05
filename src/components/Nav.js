@@ -1,10 +1,11 @@
-import React, { Component, lazy, Suspense } from "react";
+import React, { Component } from "react";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import { Link, withRouter, Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import Portfolio from "./Portfolio";
 import About from "./About";
 import Blog from "./Blog";
+import PostDetail from "./PostDetail";
 //const Blog = lazy(() => import("./Blog"));
 class Nav extends Component {
   state = {};
@@ -71,6 +72,7 @@ class Nav extends Component {
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/resume" component={About} />
               <Route path="/blog" component={Blog} />
+              <Route path="/:id" component={PostDetail} />
             </Switch>
           </Content>
         </Layout>
