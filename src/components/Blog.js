@@ -19,7 +19,7 @@ class Blog extends Component {
           posts: res.data,
           loading: true
         });
-        console.log(this.state.posts);
+        console.log(res);
       });
   };
 
@@ -27,6 +27,10 @@ class Blog extends Component {
     if (this.state.loading) {
       return (
         <div style={{ textAlign: "center" }}>
+          <h4>
+            Blog Posts fetched from (
+            <a href="https://ichiranjeeb.com">www.ichiranjeeb.com</a>)
+          </h4>
           {this.state.posts.map(post => {
             return (
               <div

@@ -36,8 +36,8 @@ class Post extends Component {
           </a> */}
           <Link to={`/${this.props.id}`}>
             <Button colored>
-              <i className="fas fa-external-link-alt" />
-              &nbsp; Visit Post
+              {/* <i className="fas fa-external-link-alt" /> */}
+              Visit Post
             </Button>
           </Link>
         </CardActions>

@@ -196,7 +196,7 @@ class Portfolio extends Component {
             description={
               "This is the firm that I am working at. I have developed the V1.0 two years ago, now I am developing the V2.0 of the site. It will go live soon"
             }
-            demo={"http://rebrandigital.com"}
+            demo={"http://v1.rebrandigital.com/"}
           />
         </div>
       );

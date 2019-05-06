@@ -83,9 +83,9 @@ class About extends Component {
         <div style={{ width: "90%" }}>
           <ul style={{ listStyle: "none" }}>
             <li>
-              <i class="far fa-hand-point-right" /> As an influencer, I was
-              working with <b>Nawzil Najeeb</b> (Marketing Manager, Microsoft
-              Kuwait) as a freelancer to promote Windows Phone 8.1 on Facebook.
+              <i class="far fa-hand-point-right" /> I was working with
+              <b>Nawzil Najeeb</b> (Marketing Manager, Microsoft Kuwait) as an
+              influencer to promote Windows Phone 8.1 on Facebook.
             </li>
             <hr />
             <li>
@@ -96,7 +96,7 @@ class About extends Component {
             </li>
             <hr />
             <li>
-              <i class="far fa-hand-point-right" /> I have organized{" "}
+              <i class="far fa-hand-point-right" /> I have organized
               <b>Hon. Prime minister Shri Narendra Modi</b>’s direct
               communication with the pubic of Madhya Pradesh on 10th Oct 2018
             </li>

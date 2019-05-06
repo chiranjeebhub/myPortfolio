@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import {
   Card,
   CardTitle,
@@ -17,7 +17,8 @@ class PostDetail extends Component {
   state = {
     title: "",
     body: "",
-    img: ""
+    img: "",
+    link: ""
   };
 
   componentDidMount() {
@@ -35,6 +36,7 @@ class PostDetail extends Component {
           title: res.data.title.rendered,
           body: res.data.content.rendered,
           date: res.data.date,
+          link: res.data.link,
           img:
             res.data._embedded["wp:featuredmedia"]["0"].media_details.sizes.full
               .source_url
@@ -70,10 +72,16 @@ class PostDetail extends Component {
           </CardText>
 
           <CardActions border>
-            <Button colored>Chiranjeeb Jena</Button>
-            <Button colored style={{ float: "right" }}>
-              {this.state.date}
-            </Button>
+            <Link to="/blog">
+              <Button colored>
+                <i className="fas fa-arrow-left" /> &nbsp;Back
+              </Button>
+            </Link>
+            <a href={this.state.link} target="_blank" rel="noopener noreferrer">
+              <Button colored style={{ float: "right" }}>
+                <i className="fas fa-external-link-alt" /> Visit Source
+              </Button>
+            </a>
           </CardActions>
           <CardMenu style={{ color: "#fff" }}>
             <IconButton name="share" className="a2a_dd" />
