@@ -43,6 +43,7 @@ class PostDetail extends Component {
         });
         console.log(res.data);
         console.log(this.state.img);
+        document.title = `${this.state.title}`;
       });
   };
 
