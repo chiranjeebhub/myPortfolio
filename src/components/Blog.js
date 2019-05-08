@@ -27,7 +27,9 @@ class Blog extends Component {
   render() {
     if (this.state.loading) {
       return (
-        <div style={{ textAlign: "center" }}>
+        <div
+          style={{ textAlign: "center", position: "absolute", width: "100" }}
+        >
           <h4>
             Blog Posts fetched from (
             <a href="https://ichiranjeeb.com">www.ichiranjeeb.com</a>)

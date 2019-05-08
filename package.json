@@ -12,7 +12,8 @@
     "react-facebook": "^8.0.4",
     "react-mdl": "^1.11.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "react-spring": "^8.0.20"
   },
   "scripts": {
     "start": "react-scripts start",
