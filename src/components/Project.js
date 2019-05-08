@@ -30,7 +30,7 @@ class Project extends Component {
           <a href={this.props.demo} target="_blank" rel="noopener noreferrer">
             <Button colored>
               <i className="fas fa-external-link-alt" />
-              &nbsp; Github
+              &nbsp; Demo
             </Button>
           </a>
         </CardActions>

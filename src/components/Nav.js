@@ -61,16 +61,16 @@ function Nav() {
         <Drawer title="Chiranjeeb Jena">
           <Navigation>
             <Link to="/">
-              <i className="fas fa-house-damage" /> Home
+              <i className="fas fa-house-damage" /> &nbsp;Home
             </Link>
             <Link to="/resume">
-              <i className="far fa-address-card" /> Resume
+              <i className="far fa-address-card" /> &nbsp;Resume
             </Link>
             <Link to="/portfolio">
-              <i className="fas fa-code-branch" /> Portfolio
+              <i className="fas fa-code-branch" /> &nbsp;Portfolio
             </Link>
             <Link to="/blog">
-              <i className="fas fa-code-branch" /> Blog
+              <i className="fas fa-newspaper" /> &nbsp;Blog
             </Link>
             {/* <a href="https://ichiranjeeb.com" target="_blank">
                 <i class="fas fa-rss" /> Blog
