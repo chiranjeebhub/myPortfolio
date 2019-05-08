@@ -10,6 +10,7 @@ class Home extends Component {
 
   componentDidMount = () => {
     loadjs("https://static.addtoany.com/menu/page.js", () => {});
+    document.title = `Home`;
   };
 
   toggle = () => {

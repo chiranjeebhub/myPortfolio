@@ -4,6 +4,10 @@ import Experience from "./Experience";
 class About extends Component {
   state = { activeTab: 1 };
 
+  componentDidMount() {
+    document.title = `Resume`;
+  }
+
   toggleTabs = () => {
     if (this.state.activeTab === 0) {
       return (

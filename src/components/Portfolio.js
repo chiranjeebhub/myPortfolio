@@ -8,6 +8,10 @@ class Portfolio extends Component {
     activeTab: 0
   };
 
+  componentDidMount() {
+    document.title = `Portfolio`;
+  }
+
   toggleTabs = () => {
     if (this.state.activeTab === 0) {
       return (

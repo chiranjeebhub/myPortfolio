@@ -10,6 +10,7 @@ class Blog extends Component {
 
   componentDidMount() {
     this.getPosts();
+    document.title = `Blog`;
   }
   getPosts = () => {
     axios
