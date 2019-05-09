@@ -100,9 +100,9 @@ class About extends Component {
             </li>
             <hr />
             <li>
-              <i class="far fa-hand-point-right" /> I have organized
+              <i class="far fa-hand-point-right" /> I have organized&nbsp;
               <b>Hon. Prime minister Shri Narendra Modi</b>’s direct
-              communication with the pubic of Madhya Pradesh on 10th Oct 2018
+              communication with the public of Madhya Pradesh on 10th Oct 2018
             </li>
           </ul>
         </div>
